@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h4 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+}
+
+.container {
+  height: 100vh;
+  background-image: linear-gradient(rgb(168, 22, 168), rgb(78, 8, 144));
+}
+.card {
+  position: absolute;
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  margin-top: 9%;
+  height: 65%;
+  width: 65%;
+  margin-left: 18%;
+}
+
+.image-1 {
+  position: absolute;
+  width: 450px;
+  margin-top: 50px;
+  margin-left: -75px;
+}
+.box {
+  position: absolute;
+  width: 220px;
+  margin-top: 170px;
+  margin-left: -130px;
+}
+.faq {
+  margin: 80px;
+  margin-left: 450px;
+  padding: 2em 0em 3.5em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 47%;
+}
+.ques {
+  padding: 18px 0;
+}
+
+.arrow {
+  width: 13px;
+}
+.div-ques-ans > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.div-ques-ans .ans {
+  margin: 0px 0px 6px 0px;
+  display: none;
+  color: hsl(240, 2%, 39%);
+}
+
+.div-ques-ans {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.ques:hover {
+  color: rgb(209 77 13 / 47%) !important;
+}
+
+.show-ans .ans {
+  display: block;
+}
+
+.show-ans .arrow {
+  transform: rotate(180deg);
+}
+
+.show-ans .ques {
+  font-weight: 600;
+  color: hsl(237, 12%, 33%);
+}
+
+@media screen and (max-width: 1450px) {
+  .card {
+    margin: 150px;
+    width: 75%;
+  }
+  .faq {
+    width: auto;
+    margin-top: 15px;
+  }
+  .image-1 {
+    width: 400px;
+  }
+  .box {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  /* body{
+      display: none;
+    } */
+
+  .card {
+    height: auto;
+    margin-left: 12%;
+  }
+
+  .image-1 {
+    width: 340px;
+    margin-top: -150px;
+    margin-left: 120px;
+  }
+  .box {
+    margin-top: -70px;
+    margin-left: 70px;
+  }
+  .faq {
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /* body{
+    display: none;
+  } */
+  .card {
+    margin-left: 12%;
+  }
+  .image-1 {
+    width:300px;
+    margin-left: 75px;
+  }
+  .box {
+    width:150px;
+    margin-left: 15px;
+  }
+  .faq{
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 550px){
+ /* body{
+    display: none;
+  } */
+  .image-1 {
+    width: 270px;
+    margin-left: 30px;
+  }
+  .box {
+    width: 150px;
+    margin-left: -20px;
+  }
+  .faq h1{
+    font-size: 30px;
+  }
+
+}
